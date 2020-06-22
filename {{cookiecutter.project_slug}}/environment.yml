@@ -11,7 +11,6 @@ dependencies:
 
 # Model related
   - scikit-learn
-  - click
   - joblib
   - pandas
   - pip:
