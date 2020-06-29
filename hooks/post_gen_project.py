@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+import shutil
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 
@@ -9,7 +10,7 @@ def remove_file(filepath):
 
 
 def remove_dir(dir_path):
-    os.rmdir(os.path.join(PROJECT_DIRECTORY, dir_path))
+    shutil.rmtree(os.path.join(PROJECT_DIRECTORY, dir_path))
 
 
 if __name__ == '__main__':
